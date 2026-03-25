@@ -45,7 +45,7 @@ In this project, the YOLOv8 Nano (yolov8n) model is used because it is lightweig
 
 ##  About Training:
 
-- The model was trained using the Ultralytics YOLOv8 ,The YOLOv8n model was trained using transfer learning on a pre-annotated fire and smoke dataset obtained from Kaggle.
+- The YOLOv8n model was trained using a pre-annotated fire and smoke dataset obtained from Kaggle.
 - The model was trained for 50 epochs, meaning it learned from the entire dataset 50 times to improve its accuracy.
 - Images were resized to 640 × 640 pixels and trained in batches of 16 images at a time.
 - The dataset configuration was provided through a data.yaml file, which specified the paths to training and validation images and the class names fire and smoke.
@@ -55,7 +55,7 @@ In this project, the YOLOv8 Nano (yolov8n) model is used because it is lightweig
  
 - The trained model was loaded using the best saved weights (best.pt) generated after training.
 - Validation was performed on images from the validation dataset to evaluate how well the model detects fire and smoke on unseen data.
-- The model predicted bounding boxes, class labels, and confidence scores for each detected object using the Ultralytics - -- YOLOv8 model for randomly selected images from the validation folder.
+- The model predicted bounding boxes, class labels, and confidence scores for each detected object using the Ultralytics YOLOv8n model for randomly selected images from the validation folder.
 - The final annotated images were displayed using Matplotlib to visually inspect the model’s detection performance and accuracy.
 - Performance was measured using standard object detection metrics including precision, recall, F1-score, and mean Average Precision (mAP@0.5).
 - Class-wise metrics were calculated separately for fire and smoke to understand how well the model performs on each category and overall average metrics were also computed to provide a summary of the model’s performance.
