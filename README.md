@@ -29,6 +29,10 @@ YOLO (You Only Look Once) is a object detection algorithm that detects objects .
 
 In this project, the YOLOv8 Nano (yolov8n) model is used because it is lightweight and trains quickly while still providing good accuracy.
 
+## Description about Layers and Activation Function: 
+- The YOLOv8n model uses around 200+ convolutional, normalization, and detection layers for feature extraction and object prediction.
+- It uses the Sigmoid Linear Unit activation function in most layers for learning complex patterns, while a Sigmoid function is used in the final layer to generate probability-based detection outputs.
+
 ## About the Dataset:
 
 - The dataset contains 21000+ images annotated for two classes: Fire and Smoke, enabling the model to detect both flames and smoke in different environments.
