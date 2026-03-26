@@ -51,7 +51,7 @@ In this project, the YOLOv8 Nano (yolov8n) model is used because it is lightweig
 - The dataset configuration was provided through a data.yaml file, which specified the paths to training and validation images and the class names fire and smoke.
 - After training, the model saved its best weights and training results automatically, which can be used later for testing and prediction.
 
- ## About Testing:
+ ## About Validation:
  
 - The trained model was loaded using the best saved weights (best.pt) generated after training.
 - Validation was performed on images from the validation dataset to evaluate how well the model detects fire and smoke on unseen data.
